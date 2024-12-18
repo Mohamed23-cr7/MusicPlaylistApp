@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Certificates</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Mohamed Aadhil</div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="s.html">Skills and Certificates</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Certificates Section -->
+    <div class="certificates-container">
+        <h1>My Certificates</h1>
+        <div class="certificate-list">
+            <div class="certificate-card" onclick="openCertificate('Certificate 1')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.02.59.jpeg" alt="Certificate 1">
+                <p>Certificate 1</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 2')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.00.jpeg" alt="Certificate 2">
+                <p>Certificate 2</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 3')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.00 (1).jpeg" alt="Certificate 3">
+                <p>Certificate 3</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 4')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.01.jpeg" alt="Certificate 1">
+                <p>Certificate 4</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 5')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.02.jpeg" alt="Certificate 1">
+                <p>Certificate 5</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 6')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.03.jpeg" alt="Certificate 1">
+                <p>Certificate 6</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 7')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.03 (1).jpeg" alt="Certificate 1">
+                <p>Certificate 7</p>
+            </div>
+            <div class="certificate-card" onclick="openCertificate('Certificate 8')">
+                <img src="Certificates/WhatsApp Image 2024-12-18 at 09.03.00 (2).jpeg" alt="Certificate 1">
+                <p>Certificate 8</p>
+            </div>
+        </div>
+    </div>
+    <p>Extra caricular Activities.......</p>
+
+    <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCertificate()">&times;</span>
+            <h2 id="certificate-title"></h2>
+            <img id="certificate-image" src="" alt="Certificate">
+        </div>
+    </div>
+
+    <script src="c.js"></script>
+</body>
+</html>

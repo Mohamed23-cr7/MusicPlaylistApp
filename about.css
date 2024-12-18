@@ -1,0 +1,273 @@
+/* For small devices (mobile phones) */
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* For tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* For desktops */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+    .container {
+      padding: 30px;
+    }
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  body {
+    font-size: 1rem; /* 1rem = 16px by default */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 1 300px; /* Grow, shrink, and base width */
+    margin: 10px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial, sans-serif';
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    background: linear-gradient(to left,#010102, #0ca785, #13af28,#000000);
+    color: #ffffff;
+    line-height: 2;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #013f1d, #000000);
+    color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #f39c12;
+    transition: width 0.4s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a:hover {
+    color: #f39c12;
+}
+.profile-pic {
+    width: 200px; /* Adjust the size of the picture */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+    border: 5px solid #f39c12; /* Adds a border with a nice color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/* Hero Section */
+.about-content {
+    text-align: center;
+    padding: 30px 20px;
+    max-height: 800px;
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(#4ca1af, transparent, transparent);
+    animation: animate-bg 6s linear infinite;
+    z-index: -1;
+}
+
+.about-content h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+/* Download CV Button */
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #f39c12, #e67e22);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.download-btn:hover {
+    background: linear-gradient(to right, #e67e22, #f39c12);
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animate-bg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .about-content {
+        padding: 60px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
