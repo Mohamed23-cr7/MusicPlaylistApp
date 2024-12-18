@@ -1,106 +1,203 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Header Section */
-.header {
-  background-color: #0077b6;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.header p {
-  font-size: 1.2rem;
-}
-
-/* Projects Container */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-/* Project Card */
-.project-card {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-}
-
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 1rem;
-}
-
-.card-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #666;
-}
-
-.card-content .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #0077b6;
-  color: white;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.card-content .btn:hover {
-  background-color: #005f86;
-}
-
-/* Footer Section */
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-  margin-top: 2rem;
-}
-
-.footer p {
-  font-size: 0.9rem;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to left, #010102, #03271f, #031b06, #000000);
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #013f1d, #000000);
+    color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Projects Container */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.918);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .card-content .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-content .btn:hover {
+    background-color: #005f86;
+  }
+  
+  /* Footer Section */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  
+  /* For small devices (mobile phones) */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* For tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* For desktops */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+    .container {
+      padding: 30px;
+    }
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    flex: 1 1 300px; /* Grow, shrink, and base width */
+    margin: 10px;
+  }
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
