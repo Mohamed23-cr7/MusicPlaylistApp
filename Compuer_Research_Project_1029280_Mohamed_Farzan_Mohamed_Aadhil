@@ -1,0 +1,612 @@
+
+Pearson
+
+Higher Nationals in
+
+Computing
+
+PEARSON SET ASSIGNMENT
+
+UNIT 16: Computing Research Project
+
+Project Proposal
+
+
+
+ 
+Project Proposal Report
+Course Title	Pearson Higher Nationals in Computing
+Unit	Unit 16 - Computing Research Project
+Project Title	Building an Ai driven system plant health scanning and pest management system drone based in Sri Lanka agricultural system.
+
+Student Name	Mohamed Farzan Mohamed Aadhil
+Centre No		
+Edexcel No	
+
+Contact No	0724008359	Email	aadhilmohammed505@gmail.com
+I certify that the given project proposal is appropriate and my own work to the best of my knowledge and I understand that plagiarism is strictly prohibited and may lead for penalty.
+Students Signature	 	Date	
+
+Comments
+Project Supervisor	T. Anis Saboordeen
+Date		Signature	
+Project Coordinator	T. Anis Saboordeen
+Date		Signature	
+Ethical Consideration Approval Form
+Declaration Sheet
+
+Presented in partial fulfilment of the assessment requirements for the above award.
+I [Mohamed Farzan Mohamed Aadhil] bearing student No [1029280] belonging to batch [CSD-84] of Pearson BTEC Level 5 Higher National Diploma do hereby declare that my final project work entitled [“Building an Ai driven system plant health scanning and pest management system drone based in Sri Lanka agricultural system.”] Submitted to BCAS is work done by me under the guidance of my Project Supervisor and Coordinator, Department of IT, BCAS School of Engineering & Technology.
+This work or any part thereof has not previously been presented in any form to BCAS or to any other institutional body whether for assessment or for other purposes. Save for any express acknowledgements, references, and/or bibliographies cited in the work. I confirm that the intellectual contents of the work are the result of my own efforts and of no other person. 
+And that I shall not submit my project work to any other institute for the award of any academic or professional qualification and/or sell such project work and/or cause any details pertaining to my project work into the possession of any other person or part with such project work in any other manner whatsoever, during or after completion of my studies at BCAS without prior written consent of the Project Coordinator and management.
+
+
+Name		: ……………………………………………
+Signature	: ……………………………………………
+
+Date		: ……………………………………………
+
+
+
+
+ABSTRACT
+
+The goal of this project is to create a drone-based AI system that will enhance pest management and plant health assessment in Sri Lanka's agriculture industry. Due to limited resources and traditional farming methods, farmers in Sri Lanka, especially in areas like Anuradhapura, Polonnaruwa, and Hatton, confront considerable hurdles in managing pests and preserving crop health. This system seeks to increase the efficiency and sustainability of agricultural practices by automating the monitoring of plant health and insect identification through the integration of drone technology with artificial intelligence (AI). 
+
+The system analyzes aerial photos taken by drones using AI-driven image recognition techniques like convolutional neural networks (CNNs). These algorithms are designed to identify early indicators of pest infestations, nutrient shortages, and plant diseases. In order to enhance performance, the system will also integrate meteorological data, such as temperature, humidity, and rainfall. The precision of forecasts and facilitate better-informed pest management decision-making.
+
+Key Sri Lankan agricultural regions will be the sites of prototype and field testing, with an emphasis on commodities vital to regional economy. Case studies will be carried out in order to assess the efficacy of the system using metrics including diagnostic accuracy, pest detection rates, and user feedback from farmers and agricultural professionals.
+
+By focusing on only the afflicted areas, this AI-driven system is anticipated to decrease the need for manual monitoring, minimize the use of pesticides, and eventually boost agricultural yields. The project's overarching goal is to support precision agriculture in Sri Lanka by encouraging more environmentally friendly farming methods. Drone technology, artificial intelligence, and climate data integration are all a big step toward modernizing agriculture. Techniques and addressing the challenges faced by farmers in developing countries.
+
+
+Table of Contents
+Statement of project details.	5
+1.1.	Title.	5
+Building an Ai driven system plant health scanning and pest management system drone based in Sri Lanka agricultural system.	5
+1.2.	Academic Questions.	5
+1.3.	Aim	6
+1.4.	Objectives	6
+1.5.	Proposed Artefact to be developed in brief (if necessary)	7
+Main section of project details.	8
+2.1. Introduction	8
+2.2. Literature Review	9
+2.2.1. Literature Survey	11
+2.3. Research approach and methodologies	15
+2.3.1. Methodologies	16
+2.4.	Full details of Artefact.	18
+2.5.	Tools and Techniques:	18
+2.5.1.	Hardware component	18
+2.5.2.	Software components	19
+2.6.	Supporting information (if required)	21
+2.7.	Answering the academic question.	21
+2.8.	Plan/Schedule	23
+2.9.	Cost.	23
+2.10.	Conclusion	24
+2.11.	Critical evaluation of the product.	25
+2.12.	References	25
+2.13.	Appendices to the final report	27
+3.	Ethical Consideration Approval Form	35
+
+Figure 1/ wire frame	8
+Figure 2/ water fall module	20
+Figure 3/ plan	23
+Figure 4	27
+Figure 5	28
+Figure 6	29
+Figure 7	30
+Figure 8	30
+Figure 9	31
+Figure 10	31
+Figure 11	32
+Figure 12	32
+Figure 13	32
+Figure 14	33
+Figure 15	34
+Figure 16	35
+
+Table 1/ Hardware component	19
+Table 2/cost	24
+
+Statement of project details.
+1.1.	Title.
+Building an Ai driven system plant health scanning and pest management system drone based in Sri Lanka agricultural system.
+1.2.	Academic Questions.
+
+II.	What is the impact of the introduction of AI and drone-based systems to the farmers in Sri Lanka?
+III.	What are the major challenges in integrating AI and drone technology for health monitoring and pest management for Sri Lanka’s agricultural sector?
+IV.	How much do AI and drone technologies contribute to the closure and early control of insect infestations in major crops in Sri Lanka?
+V.	How do local climate conditions in regions like Anuradhapura, Polonnaruwa, and Hatton impact the effectiveness of AI-driven pest management systems?
+VI.	What role does climate data integration play in enhancing the accuracy of AI-based crop health assessments in Sri Lanka?
+VII.	How does the use of AI and drone-based pest management in Sri Lanka compare with similar systems in other countries with tropical climates?
+VIII.	How can privacy and ethical concerns surrounding data collection using drones in agricultural fields be addressed?
+IX.	How can AI-driven drone systems be integrated into the existing agricultural practices of Sri Lankan farmers without disrupting their workflows?
+X.	How can drones be optimized for long-term operation in Sri Lanka’s diverse agricultural landscapes, considering battery life and terrain challenges?
+1.3.	Aim
+
+The main Aim of this project is to start an AI based pest control and plant health checkup and control system in Anuradhapura, Polonnaruwa and Hatton areas of Sri Lanka, focusing on farmer retreats and problems. This will help farmers in these areas increase the quantity and quality of agricultural produce, providing an efficient way of detecting and controlling diseases and post-outbreaks of plants.
+Early plant disease and pest detection: Use AI and drones to find early warning indicators of pests, diseases, and nutrition short crops.
+Increasing crop yield: Providing timely and accurate data to farmers helps them manage their crops more effectively.
+Cost-effective pest management: Use focused pest management strategies based on AI analysis to reduce the need for heavy pesticide use.
+
+Real-Time Surveillance: 
+In order to keep an eye on the health and growth stages of plants, large agricultural fields must be continuously and monitored in real time.
+
+Minimize Crop Loss: 
+To minimize crop damage and lower losses from pests and diseases, identify problem areas early.
+(Author’s View)
+1.4.	Objectives
+
+•	Identifying and assessment of plants heaths:
+	Accurately identify the health status of the plants in the cultivation zones of Anuradhapura, Polonnaruwa and Hatton district, assess them, and identify diseases and post-invasions in the cultivation zone.
+•	Implementation of advanced pest control methods:
+	Introduction of modern AI and drone technology for farmers to detect and control pests and diseases that cause major damage to crops in those areas.
+•	Improving agricultural productivity:
+	Providing accurate information and feedback to the farmers, advising them on agricultural cultivation, and assisting them in achieving greater crop yields and performance.
+•	Develop an AI-Driven System:
+	Design and implementing an AI-based system that can analyze drone-captured images to identify plant health issues such as diseases, pests, and nutrient deficiencies.
+•	Improving agricultural productivity: 
+	Increasing crop yield and quality by ensuring better crop health management through automated scanning and data analysis.
+•	Promoting sustainable agriculture: 
+	Reducing environmental impact by encouraging precision farming and reducing overuse of chemicals in pest management.
+•	Ensuring scalability and adaptability: 
+	Develop a flexible system that can easily adapt to different crops, climate and regions across Sri Lanka.
+1.5.	Proposed Artefact to be developed in brief (if necessary)
+
+Artefact for this project is an AI Driven drone management system for plant health management system for plant health monitoring and pest management in agriculture. This system build in advanced machine learning, drone control, and automated flight path optimization tailored to the needs of Sri Lankan Agriculture.  
+Flight path Optimization: 
+The module utilizes custom scripting to dynamically adjust drone paths based on real-time plant health data, ensuring efficient pesticide or nutrient application and resource efficiency.
+Plant health scanning: 
+A convolutional neural network CNN will be developed using Tensor Flow and Keras to analyze drone crop images, detecting stress, diseases, and pest infestations early, and enhancing crop management.
+LIDAR sensor integration:
+Drones using hyper spectral cameras and LIDAR sensors will collect 3D data on crop fields, enhancing precision agriculture insights by identifying nutrient deficiencies, plant stress levels, and field topology.
+Ground Control:
+The interface enables real-time drone operation monitoring, optimizing flight paths and enabling informed decision-making based on field conditions and crop health.
+This artifact aims to create an efficient, scalable solution to address key challenges in pest control, plant health monitoring, and climate adaptability in Sri Lanka's agriculture. 
+(Betancourt, 2023)(Author’s View) (view, n.d.) (Lorence, 2023) (view, n.d.)
+ 
+Figure 1/ wire frame
+I was used to create my drone system drone. Battery, GPS, controller, LIDE sensor, hyperspace camera, pest sensor. high performance drone feather.
+Main section of project details.
+
+2.1. Introduction
+
+In Sri Lanka, agriculture is an important industry that contributes significantly to both the country's economy and food security. Notwithstanding its significance, the industry faces serious obstacles such pest infestations, plant diseases, and wasteful resource use, all of which can lower crop yields and cause financial losses. Especially in large-scale farming operations, traditional techniques of controlling pests and keeping an eye on plant health are frequently labor-intensive, time-consuming, and ineffective.
+With advancements in artificial intelligence (AI) and drone technology, there is a promising opportunity to transform the agricultural sector through automation and optimization of crop monitoring and pest management processes. This project proposes the development of an AI-driven system that utilizes drones to conduct real-time plant health scanning and pest management. By integrating high-resolution imaging, machine learning models, and data analytics, the system aims to provide farmers with actionable insights to enhance crop health and productivity.
+The proposed system will be tailored to Sri Lanka's diverse agricultural landscape, considering factors such as local climate, crop types, and prevalent pests. It will offer a cost-effective and scalable solution to improve precision agriculture practices, ensuring sustainable farming and more efficient resource management. Although drone technology is currently employed for various tasks in Sri Lanka, there is a notable gap in advanced plant health scanning and climate monitoring. Our project seeks to bridge this gap by developing an AI-enhanced system that delivers precise, actionable insights, thus enabling better crop management and boosting agricultural productivity across Sri Lanka.
+Ex: in Sri Lanka main crop problem is flood, because of flood farmers are loses their crops and paddies in the eastern districts of Ampara, Batticaloa, Polonnaruwa, Trincomalee and north-central district of Anuradhapura. Sri Lanka will lose over one million tons from its upcoming paddy harvest due to recent flooding, officials say.
+"We expected a yield of around 2.75 million metric tons from the harvest due in March to April," Kulugammanne Karunathileke, secretary to the Ministry of Agriculture, told IRIN. "After the heavy rains we will only get around 1.75 million."
+Karunathileke, the highest-ranking official at the ministry, said the country had expected a bumper crop - until flooding, which began in January, left some paddy fields under water for up to 11 days. Then I was decides to create a climate detecting system through based on AI and using drone based. Climate control systems play a vital role in ensuring food security, optimizing agricultural practices, and enhancing sustainability within the agricultural industry.    (TNH, 2011)  (view, 2024).
+KURUNEGALA, Sri Lanka — With the COVID-19 pandemic contained following a strict two-month lockdown, Sri Lanka relaxed restrictions in late May 2020. But now, several farming communities are facing a second crisis in the form of hungry insects.
+As the lockdown lifted, farmers and home gardeners from Mawatha Gama a hamlet in Sri Lanka’s north western province, wanted to resume cultivation, only to find a species of grasshopper destroying their crops.
+Yellow-spotted grasshoppers (Aularches miliaris), commonly known as coffee locusts, first emerged in smaller quantities from a coconut plantation in the province, which is noted for its coconut production. Within a few days, the insect numbers increased. Soon after, grasshoppers started appearing in neighboring home gardens as well. Panicked residents called regional agricultural supervisors on May 30 to report the sightings and request aid. 
+ (Rodrigo, 2020)(Author’s View)
+
+2.2. Literature Review 
+Here I’m going to explain my literature review on my research project, in my project first I was research this project is any one done in past and then I was stated work on that. My concept is pest management, climate control and crop storage using AI technology and feed that technology to drone system. In here I mate problems to made this in Sri Lanka already have drone base pest management system in agricultural industry then I was decided to using artificial for this system for scanning soil level and plant health now days we losing lots of our paddies because of we don’t have many amount of knowledge about the plant health then I was decided to add AI to plant health scanning system for drone.
+In the agricultural industry very important pest management we can feeding pest to plants and paddies using drone in this system already using in Sri Lanka but not familiar everyone we can implement this very advance using AI and computer base system above I mentioned soil and plant scanning we can use radiator system for this and we can include automated system for only we want to feed information.
+This automated system we can using for climate control system. In this AI can continuously monitoring climates and crops quantity every single minutes and agriculture can updated every minutes what’s on going in there farming. We want to discuss various machine learning algorithms used for plant health monitoring, such as image recognition, remote sensing, and predictive analytics. I was research Anuradhapura, Polonnaruwa, Monaragala and Hatton district those districts peoples are suffering pest problem and climate problem because of that they are losing their farming. But one day I will do some kind of system for agricultural industry using computer based and AI. 
+                                                                                                  (Author’s View) 
+The literature on AI-driven crop health monitoring and pest management solutions highlights the integration of cutting-edge technologies to address the pressing challenges in agriculture. Key themes identified in recent studies include the use of artificial intelligence, deep learning, and IoT in managing crop health, optimizing pest control, and improving productivity. This review synthesizes various technological approaches, emphasizing their impact on modern agriculture, particularly within Sri Lanka.
+ AI-driven systems offer enhanced crop monitoring, pest detection, and nutrient management through data collected from satellites, drones, and sensors. Deep learning (DL) and convolutional neural networks (CNN) are highlighted as key technologies for identifying pests and optimizing agricultural inputs like fertilizers, thereby promoting sustainable and efficient farming practices.
+Focuses on soil fertility and irrigation as vital factors influencing crop yield. The proposed system analyzes soil pH, moisture, and nutrient levels, enabling farmers to make informed decisions about crop selection, fertilizer application, and irrigation scheduling. This approach helps farmers mitigate crop disease, manage water resources, and address challenges with pest infestations, thus improving productivity.
+Autonomous mobile robots have been developed to monitor pests and plant health in greenhouses, with machine learning and image processing techniques to detect diseases and nutrient deficiencies. As these systems offer the potential for crop-specific adaptations, aiming to protect Sri Lanka's agricultural sector from pest-related losses through advanced robotics and mobile app interfaces.
+How deep learning models can accurately detect rice diseases and predict yield losses in Sri Lanka’s rice industry. By classifying diseases and forecasting spread patterns, AI tools facilitate targeted interventions, ensuring higher productivity and food security while supporting farmers in yield optimization.
+Have designed mobile applications that help farmers manage budgeting, forecast weather, analyze plant conditions, and improve decision-making based on real-time data. Additionally, research shows that empowering farmers through a mobile app for identifying crop disorders resulted in significant reductions in agrochemical use and associated costs, boosting revenue and crop quality.
+Agricultural challenges like crop raiding by wildlife and inadequate weather prediction. This study proposes an integrated system combining weather data, wildlife intrusion alerts, and a sentiment-analysis chatbot to assist farmers in planning and protecting their crops. This holistic solution emphasizes the role of technology in addressing unpredictable natural and environmental threats. These studies demonstrate how AI, ML, and IoT can transform traditional agricultural practices, creating a data-driven, precision-based approach that empowers farmers, enhances crop productivity, and supports Sri Lanka's agricultural economy.
+(Agro-Engineering, 2022) (Dilipkumar, 2024) (M.,, 2022)
+
+
+2.2.1. Literature Survey 
+
+•	Discusses AI-driven systems for crop health monitoring and pest control.
+
+Abstract: The current scenario of agricultural trends requires resilience, constancy, and enhanced productivity to meet growing demands, confronting climate crisis, Tran’s boundary pests, and crop disease issues. Precision agricultural technologies encompass Artificial Intelligence (AI)–driven management systems, integrating field data collection and analysis reports on crop health, crop-related monitoring and management, harvest prediction, the optimization of fertilizers and pesticides, and the use and presence of pests or weeds. Conventional techniques for detecting crop vigor, robustness, and susceptibility to pest infestation or abiotic stress factors have some limitations. The monitoring of crops and agricultural land as well as the factors affecting crop health, achieved through AI-aided smart systems, has the potential to escalate crop productivity by using modern farming techniques. For the management of pests in precision agriculture, deep learning (DL)–based systems and convolutional neural network (CNN) models are used to detect pest-infested plants and also efficiently control them before they cause the plant to become diseased. Input data is collected from AI devices involving various associated parameters like light, temperature, humidity, rainfall, and fertilizer concentration. The collected data from satellite imagery, drones, and sensors is processed and managed by AI-driven precision agricultural systems. Thus, maximum output is achieved through optimal resource utilization, maintaining Agri-ecosystem sustainability. This chapter focuses on the major application areas of AI in precision agriculture for quick and eco-friendly solutions. (Dilipkumar, 2024)
+
+•	Literature review focuses on existing problems in agriculture industry.
+
+Abstract: Agriculture is the primary sector that supports Sri Lanka's economy. The introduction of novel technologies into agricultural practices will be of great assistance to farmers. The soil's pH and moisture content play a crucial part in the monitoring of soil fertility, irrigation level, and plant growth. Sometimes farmers were unsuccessful in selecting the appropriate crops to grow based on the conditions of the soil, the planting season, and the geographic location. Soil fertility is an important aspect in agriculture to determine the soil's quality. Soil nutrients are depleted after each harvest and must be replenished. The Irrigation system needs to control flood levels and adapt to paddy development. Water is necessary for the preparation of the ground, the planting of the crop, and crop upkeep throughout the growing-to-harvest cycle. The occurrence of paddy plant diseases and the presence of pests are two key factors that influence the production and quality of rice. One of the industry's biggest problems is the lack of a reliable method for determining paddy field soil nutrient levels, identifying the suitable crop, knowing the level of irrigation, and identifying the pest. This leads to farmers taking their own lives, leaving the agricultural industry, and moving to urban areas in search of work. This research has proposed a system to assist farmers in crop selection, fertilizer recommendation, irrigation, and pest detection by taking into account all of the relevant factors such as soil nutrient level, soil fertility, moisture level, PH, Temperature, and pest images. A mobile application and an intelligent method that is adapted to the requirements of the crop in each field can provide the farmer with information about the suitable crop, fertility of the soil, suitable fertilizer, irrigation level, and identified pest which will increase crop yield. (Agro-Engineering, 2022)
+
+•	Literature review focuses on agricultural challenges and proposed IoT solution
+
+Abstract: Agriculture is the primary sector that supports Sri Lanka's economy. The introduction of novel technologies into agricultural practices will be of great assistance to farmers. The soil's pH and moisture content play a crucial part in the monitoring of soil fertility, irrigation level, and plant growth. Sometimes farmers were unsuccessful in selecting the appropriate crops to grow based on the conditions of the soil, the planting season, and the geographic location. Soil fertility is an important aspect in agriculture to determine the soil's quality. Soil nutrients are depleted after each harvest and must be replenished. The Irrigation system needs to control flood levels and adapt to paddy development. Water is necessary for the preparation of the ground, the planting of the crop, and crop upkeep throughout the growing-to-harvest cycle. The occurrence of paddy plant diseases and the presence of pests are two key factors that influence the production and quality of rice. One of the industry's biggest problems is the lack of a reliable method for determining paddy field soil nutrient levels, identifying the suitable crop, knowing the level of irrigation, and identifying the pest. This leads to farmers taking their own lives, leaving the agricultural industry, and moving to urban areas in search of work. This research has proposed a system to assist farmers in crop selection, fertilizer recommendation, irrigation, and pest detection by taking into account all of the relevant factors such as soil nutrient level, soil fertility, moisture level, PH, Temperature, and pest images. A mobile application and an intelligent method that is adapted to the requirements of the crop in each field can provide the farmer with information about the suitable crop, fertility of the soil, suitable fertilizer, irrigation level, and identified pest which will increase crop yield. (Agro-Engineering:, (2022).)
+
+•	Focus on autonomous aircraft systems and greenhouse partner robot system.
+
+Abstract: The agricultural sector is a major economic force in Sri Lanka, which contributes to the national economy, food security, and employment. The traditional methods practiced by farmers mainly drove the growth of the agriculture sector over the last 2500 years. However, these traditional methods have often been ineffective against pest attacks in recent years causing significant losses to farmers and threatening food security. To counter these issues, officials and researchers have started formulating novel technology-based smart solutions. This study proposes a smart, autonomous mobile robot that can help detect pests and diseases in advance and assist in crop estimation of chili plants. The model is created as such for pest and plant disease detection in small-scale chili plantations with the hope of using it in other crop types for the same purpose in the future. Thus, the proposed approach together with the developed model can be used to enhance the growth of other plants as well. Identification of the type of garden and the detection of pests and plant diseases are achieved using machine learning techniques while the identification of nutrient deficiencies is achieved using image processing techniques. This proposed mobile robot incorporates sensory inputs, machine learning, robotics, and image processing. Furthermore, a mobile application acts as the interface between the user and the robot. (M.,, 2022)
+
+•	Deep learning for disease detection, yield prediction, and remediation.
+Abstract: Sri Lanka's rice cultivation is a vital industry supporting over 1.8 million cultivators and providing staple sustenance for 21.8 million people. According to Sri Lanka's Central Bank, rice cultivation contributed 2.7% to the country's GDP in 2020 [3]. Pests and diseases, particularly rice thrips damage and rice blast disease, are a challenge for the industry, as they cause yield loss. This paper describes an intelligent solution that aids stakeholders by detecting and classifying the disease, forecasting its dispersion, and providing remedies. The proposed solution is approached with deep learning techniques for real-time detection and classification of the disease, location tracking of infected areas, and pesticide application on the target. In addition, it predicts the spread of disease based on the locations of infected individuals. In addition, the solution enables Machine-learning algorithms to recommend appropriate rice varieties and predict yields. In controlled experiments utilizing data from Sri Lankan paddy fields, the proposed method obtained high accuracy rates of 89%-98% in identifying disease and rice varieties and yield prediction. This system has the potential to increase rice production and productivity, decrease yield loss, and benefit the Sri Lankan rice industry and producers. (Siventhirarajah, 2021)
+
+•	Machine-learning algorithms recommend rice varieties and predict yields.
+
+Abstract: Sri Lanka's rice cultivation is a vital industry supporting over 1.8 million cultivators and providing staple sustenance for 21.8 million people. According to Sri Lanka's Central Bank, rice cultivation contributed 2.7% to the country's GDP in 2020 [3]. Pests and diseases, particularly rice thrips damage and rice blast disease, are a challenge for the industry, as they cause yield loss. This paper describes an intelligent solution that aids stakeholders by detecting and classifying the disease, forecasting its dispersion, and providing remedies. The proposed solution is approached with deep learning techniques for real-time detection and classification of the disease, location tracking of infected areas, and pesticide application on the target. In addition, it predicts the spread of disease based on the locations of infected individuals. In addition, the solution enables Machine-learning algorithms to recommend appropriate rice varieties and predict yields. In controlled experiments utilizing data from Sri Lankan paddy fields, the proposed method obtained high accuracy rates of 89%-98% in identifying disease and rice varieties and yield prediction. This system has the potential to increase rice production and productivity, decrease yield loss, and benefit the Sri Lankan rice industry and producers. (S., (2023))
+
+•	Mobile app with budget planning, plant conditions, weather forecasting developed.
+
+Abstract: Agriculture dramatically contributes to the economy by creating a monetary future for developing nations. However, in Sri Lanka, the farmers have confined resources and encounter numerous challenges to enrich their crop productivity and prevail in the competitive business world. In the directive, the farmers' knowledge about export crops and weak decision- making needs to be exposed [1]. This study has built a mobile application with budget planning, determining plant conditions, weather forecasting, analyzing harvest quality, and a price prediction system to mitigate these hardships. This application would be utilized to manage three critical plants in Sri Lanka t for extraction and export. Those are Vanilla, Pepper, and Cardamom. The key technologies used for the system are deep learning and machine learning. The overall system obtained desirable outcomes with an accuracy rate higher than 94%-97%. The ultimate intent of this study is to achieve the optimal growth of the agriculture sector by navigating the farmers to get maximum crop yield, quality, and effective decision-making through reliable market trends and to enhance the farmers' profit. (VAPECA, 2024)
+
+•	Empower farmers to identify and manage crop disorders
+Abstract: We have developed a system facilitated by a mobile artefact to effectively identify crop disorder incidents and manage them using recommended control measures. This work overcomes the limitations of the existing attempts by using digital technology to empower farmers to identify crop disorders rather than replace them with automated techniques. Our approach empowers farmers by providing the information in context for them to identify crop disorders. The developed solution can identify most of the crop disorders instantaneously, irrespective of the crop or other factors that make crop disorder identification complicated. For the rest, it provides a mechanism to carry out a manual identification with the help of subject experts. The solution was deployed among paddy farmers in Sri Lanka to understand how well this could assist them in identifying and managing crop disorders. The system was able to identify 70.8% of the crop disorder incidents reported by the farmers and provided them with the relevant control measures. Farmers’ perceptions of various usability aspects of the solution revealed that the application of agrochemicals and expenses associated with agrochemicals were significantly reduced. It was also observed that the yield quality and quantity and overall revenue have increased compared to the previous seasons. (Janagan, n.d.)
+•	Addresses problems faced by farmers in Sri Lanka.
+Abstract: In Sri Lanka many problems have to be dealt with, to be a successful farmer Poor weather prediction, crop-raiding by wildlife animals and poor agricultural management are some of the main problems the farmers have been dealing with for a long time [1] We were looking forward to providing a solution for the farmers on the above-mentioned issues Currently, Farmers cultivate crops based on their past experience This is turning out to be difficult because of the changes in weather patterns due to industrialization and global warming We realized this could be overcome by an application that could process the data present in the agricultural and meteorological departments and give farmers insights about weather changes Crop-raiding is another problem that farmers need to face in Sri Lanka Farmers use traditional methods as fencing to prevent these attacks But still, the wildlife intrusions happen over a broken fence [2] The time taken to notify farmers regarding these problems ensures that the damage has already been done by the time they are informed As a solution, we are proposing to implement a system to identify the animals and notify the farmer as soon as possible Poor agricultural management implies a lack of knowledge about diseases, agrochemicals, and poor planning on cultivation [3] We are planning to improve this situation by gathering information regarding these and provide that information to farmers collectively through an application The final output of our research would be an application including a weather prediction, wildlife intrusion detection, and a sentimental analytical Chabot together. (Janani, 2021))
+
+
+
+2.3. Research approach and methodologies
+
+For this project, combining both qualitative and quantitative research methods. This approach provides a comprehensive understanding of the challenges and opportunities that exist in the agricultural sector of Sri Lanka, especially in Anuradhapura, Polonnaruwa and Hatton, where various agricultural practices and environmental conditions exist.
+•	AI-based mobile application system for Brinjal Diseases
+•	Analyzing eating patterns of leafhopper damage.
+•	Climate and environment data integration.
+•	Drone based field testing and data collection.
+•	Field surveys and interviews.
+•	 Pest management strategies. 
+This project aims to explore methods whereby AI-based techniques can optimize and automate monitoring plant health and pest management for agricultural system in Sri Lanka with drones. We will use a mixed study design including both qualitative and quantitative research methods to examine the topics, system design, and evaluate effectiveness.
+Research Approach
+Qualitative Research: to understand the current state of farmers in Sri Lanka - Anuradhapura, Polonnaruwa, Hatton etc. The methods that we will be using, like interviews with farmers and agricultural experts and document analysis, will help to determine the needs for the system and all the core problems.
+Quantitative Research: Looks at validating how effective the system is (Scans on plant health accuracy, pest detection rates) then comparing it back to qualitative scores from stakeholders looking at things like who simple/easy/friendly/ etc. the airframe intelligence turned out to be.
+2.3.1. Methodologies
+AI Techniques for Image Processing: The system will have AI-driven algorithms to process images, such as CNNs, for automatically identifying diseases, nutrients-residue and pest from aerial imagery gathered by drones.
+Climate Data Integration: Incorporating weather data and environmental indicators with local climate variations will improve pest management & health predictions.
+Prototyping and Case Studies A prototype of the drone-based AI system shall be developed, tested in different regional agro-climatic zones of Sri Lanka. The case studies will monitor how the system is functioning in terms of plant health and pest control management in crops found specifically in these regions.
+Metrics for Evaluation: Plant health diagnostic accuracy, pest detection rates and user feedback (from farmers, agricultural stakeholders) will all be used to evaluate the performance of this system.
+Research Areas
+AI in Agriculture — Application of AI technologies, especially in image processing, in real world agriculture use cases for plant disease detection, crop monitoring and pest management;
+Autonomous Pest Control – Exploring a study in combining drones with AI to optimize pest detection and control, which could be faster than the usual methods used.
+Climate-Driven Predictions: Unlike the above process, AI models that perform health and pest predictions considering climate and other environment-specific aspects with higher accuracy (i.e. more holistic approach).
+Bring AI Into Agriculture: Test how well AI models and drone systems are in an effort to improve the surveillance of plant health, pest control, yields as compared to traditional methods.
+Choice of Methodology Reasons
+AI and Image Processing: AI and image processing work effectively in monitoring plant health and detecting pests since there are various crops available for Sri Lankan agricultural regions, sprawling vast topographical regions
+Integration of Climate Data: The local climates at different places such as Anuradhapura, Polonnaruwa and Hatton are disparate; hence, integration of local climate data is required for better prediction.
+Prototyping and Case Studies — Prototype the system and test it in real world agriculture environment to ensure the solution could be purpose-built for Sri Lankan farming context, crops etc.
+It will enable the project to build an end-to-end AI-powered drone-based system with a focus on plant disease detection and pest management for better agriculture in Sri Lanka through integration of this research. (Author’s view)(Lectures View)
+Quantitative Research methodology 
+Plant Health Diagnostics: To identify plant diseases and evaluate general plant health, aerial imagery gathered by drones will be examined using AI-powered image processing methods like Convolutional Neural Networks (CNNs). Precision, recall, and F1 scores—all quantitative measures of diagnostic accuracy—will be documented.
+Pest Detection Rates: In addition to evaluating pest populations and damage, the system will calculate pest detection rates. A precise comparison between the AI-driven strategy and conventional pest management techniques will be made possible by this data.
+Environmental Data Collection: To determine how local conditions affect plant health and pest activity, drones fitted with sensors will collect climate and environmental data (such as temperature, humidity, and soil moisture) across several regions.
+The efficacy of AI-based image processing in detecting diseases and nutrient deficiencies in crops will be assessed using quantitative metrics like detection accuracy, specificity, and sensitivity.
+The effectiveness of the system in identifying pests and potential threats across different crop types will be assessed using evaluation metrics like detection rate, false positive rate, and response time.
+The effectiveness of integrating climate data to predict pest and disease outbreaks will be assessed using correlation analyses, offering quantifiable insights into how well the system can predict problems based on environmental condition. 
+Regional Performance Comparisons: Anuradhapura, Polonnaruwa, and Hatton are the three agro climatic zones where the drone-based system will be installed. The system's ability to adjust to various crop kinds and environmental conditions will be evaluated using the use of quantitative data on system performance across different locations.
+Statistical Evaluation of the Case Study Findings: Metrics like mean accuracy scores and standard deviation will be used for comparative analysis across test zones in order to find variations in the system's performance. This will demonstrate the solution's resilience for broad use in Sri Lanka.
+In order to thoroughly assess the efficacy of the AI-driven drone system in Sri Lanka's agricultural landscape, the quantitative methodology for this project entails gathering and evaluating structured, quantifiable data across a number of dimensions, including diagnostic accuracy, pest detection rates, climate-driven predictions, and user feedback.
+2.4.	Full details of Artefact. 
+
+Flight path optimization: 
+This software artifact includes tools for planning and automating drone paths across agricultural fields, allowing for efficient and systematic coverage of areas needing monitoring. It enables flight planning to capture images of the crops from a bird’s-eye view and adjust drone paths based on specific field parameters. 
+It assists in capturing satellite-like images of the field area, serving as a crucial starting point for data acquisition.
+Plant health scanning 
+This is a software artifact developed using frameworks like Tensor Flow, PyTorch, and Keras for building and training machine learning models, particularly convolutional neural networks (CNNs) for image recognition. It scans images and sensor data to identify signs of crop stress, diseases, or pests. 
+The model processes images captured by drones and extracts key indicators of crop health, which are essential for timely interventions.
+LIDAR sensor integration:
+Hyper spectral cameras and LIDAR sensors are examples of hardware artifacts that are necessary for collecting high-resolution data on field topography and crop health. In order to identify particular markers of plant health, including nutrient deficits or stress, hyper spectral cameras take pictures at various wavelengths. In the meantime, LIDAR sensors produce intricate three-dimensional representations of the terrain, offering details on elevation and field structure. They improve the precision and accuracy of the machine learning models used in plant health monitoring by enabling a deeper understanding of crop and soil conditions. This data-driven strategy encourages more focused, efficient crop management activities.
+Ground Control
+The Ground Control Station is a combination of software and hardware used to control and monitor drones in real time. It includes laptops or controllers that provide telemetry data (e.g., position, altitude, and battery levels), and may also host post-processing software for data collected by the drones.
+GCS allows for hands-on monitoring of drone activity, providing operators with the flexibility to adjust flights based on data received. 
+2.5.	Tools and Techniques:
+
+2.5.1.	Hardware component  
+
+Discuss the types of drones being used for plant health scanning and pest management. 
+Drones 	Usages
+Multirotor drones 	This drones are easiest and cheapest for getting frame. And hence they are perfect for aerial photography and surveillance.
+Fixed-wing drones	This drone type only needs the energy to move forward and not to hold itself in the air. This makes them energy-efficient.
+Single-rotor drones	Single-rotor drone types are strong and durable. They look similar to actual helicopters in structure and design.
+Fixed-wing hybrid VTOL	Hybrid VTOL drone types merge the benefits of fixed-wing and rotor-based designs. This drone type has rotors attached to the fixed wings, allowing it to hover and take off and land vertically.
+Table 1/ Hardware component
+(Rennie, 2016)
+Sensors:
+Hyper spectral cameras capture images in multiple wavelengths, allowing for better detection of crop health, nutrient deficiencies, and disease symptoms.
+LIDAR Sensors for creating details 3D models of the farm landscape 
+Drone control and real-time data monitoring are made possible by ground control stations (GCS), which are composed of hardware and software. Drone operations can be monitored and controlled using laptops or specialized controllers equipped with telemetry.
+
+2.5.2.	Software components 
+
+In software component we have to capturing the images over the field area and software used for flight planning, automating drone paths this called like capturing satellite picture mission planning software. 
+We want optimizing drone flight path or adjusting pesticide delivery based on plant health data. This called Custom Java Script.
+Above mentioned two software are Drone Control Software.
+Tensor Flow/PyTorch
+Keras
+The Tensor Flow/PyTorch and Keras these are using for developing machine learning models specially using scanning plant health using image recognizing. Application Programming Interfaces that can be used alongside Tensor Flow to simplify model building. 
+Drone will capture images and sensor data over crop fields, processed in real-time via onboard edge computing or post-flight. Machine learning models, particularly convolutional neural networks (CNNs), will analyze these images to detect plant stress, diseases, or pests. This allows efficient monitoring of crop health for timely intervention.
+(Singh, 2022)(Author’s View)
+
+In here I was used waterfall methods,
+ 
+Figure 2/ water fall module
+Each stage of a hardware-focused project utilizing the Waterfall methodology will mostly entail actions pertaining to the drone and its parts:
+
+	Analysis of Requirements: Describe the drone's hardware requirements, paying particular attention to features required for agricultural surveillance. Camera quality, sensor payload capacity (such as LIDAR and hyper spectral cameras), and flight time for covering particular field areas are a few examples of requirements.
+	System Design: Create the drone's hardware layout based on the specifications. For health scanning, this will entail choosing the right drone models (such as Multirotor and fixed-wing) and incorporating sensors that can record crop data at different wavelengths.
+	Implementation: Put the drone together, incorporating sensors such as hyper spectral cameras and LIDAR. This stage entails setting up the drone's payload to collect data effectively and making sure all parts are safely
+	Testing: Evaluate the drone's hardware performance in the field, including battery life, camera stability, and sensor accuracy. This guarantees that the hardware functions efficiently in actual agricultural settings and that it gathers high-quality data for further AI processing.
+	Deployment: The hardware is put into use in a real field after testing. The hardware capabilities of the drone are evaluated for dependability in various agro-climatic situations, despite the fact that the AI system has not yet been integrated.
+	Maintenance: Sensors, power systems, and flight components are all inspected as part of routine hardware maintenance for the drone. This guarantees long-term robustness and preparedness for upcoming AI integration.
+
+This method prepares the drone for future AI-driven image processing capabilities by ensuring that it is sturdy, dependable, and appropriate for gathering data in agriculture.
+
+
+
+
+2.6.	Supporting information (if required)
+
+
+2.7.	Answering the academic question.
+
+I.	What is the impact of the introduction of AI and drone-based systems to the farmers in Sri Lanka?
+The use of robots and drones in Sri Lanka’s agricultural system can immediately identify existing problems in identifying insects, diseases and pests in crops, finding places with nutritional needs, and monitoring crop outcome and quality.
+	Insect and disease detection: 
+Projects are not enough for farmers to detect and control insects and diseases. The use of agro-chemicals has long-term effects on the environment. Accurately detect diseases and insect pests through drones and AI-driven robots, and quickly accurate responses can be achieved.
+	Monitoring crop results and quality: 
+Through drone technology, farmers can monitor crop outcome and quality, which will contribute to farmers taking corrective measures according to market requirements.
+	Commercial Advantages: 
+By covering drones and robots in Sri Lanka's agriculture, it will help farmers to provide more efficiency and eco-friendly activities, improve quality and results, and solve problems in the short term.
+	Places with nutritional need: 
+In the event of a reduction in nutritional requirement to crops, those locations can be identified immediately and the process of development can be provided. Sri Lankan growers will be able to respond to short-term problems.
+
+
+II.	What are the major challenges in integrating AI and drone technology for health monitoring and pest management for Sri Lanka’s agricultural sector?
+	Lack of technical expertise:
+They don’t have trainers for handling this drone system and controlling AI system, as many farmers and workers may not have the necessary technological skills.
+	Climate:
+Monsoons and high humidity, which can affect drone functionality and data collection, drones may face difficulties operating in Sri Lanka’s tropical weather conditions.
+	Data accuracy and efficiency: 
+Sri Lanka's diverse agricultural environments, climate, and insect changes must be specifically intended for AI systems, which makes it difficult to make accurate decisions for step-sized data.
+III.	How much do AI and drone technologies contribute to the closure and early control of insect infestations in major crops in Sri Lanka?
+	AI and drone technology are extremely valuable for managing and controlling pest outbreaks in Sri Lanka's major crops. 
+	Drones can cover vast agricultural areas, capturing data on plant health in real-time, while AI analyzes this data to detect early signs of pest infestations. By identifying issues early, farmers can take timely action, reducing damage and increasing crop yield. Furthermore, AI can predict potential outbreaks, allowing for proactive pest management. 
+	These technologies make pest control more efficient, cost-effective, and environmentally friendly, supporting sustainable agriculture in Sri Lanka.             
+IV.	How do local climate conditions in regions like Anuradhapura, Polonnaruwa, and                                              Hatton impact the effectiveness of AI-driven pest management systems? 
+The local climate in places like Hatton, Polonnaruwa, and Anuradhapura is a major factor in determining how effective AI-driven pest management systems are. Every area has a unique microclimate.
+	Anuradhapura: Due to its hot, arid climate, which is prone to periodic droughts and erratic rainfall, the city is susceptible to pests like armyworms, which prefer dry environments.
+	Polonnaruwa: Rapid pest infestations can result from a tropical monsoon climate, which includes substantial rainfall during specific months. AI systems need to identify these infestations early to avoid causing crop damage.
+	Hatton: Fungal diseases and pests that love wetness thrive in the cooler, rainy climate of the central highlands, where tea and other cash crops are cultivated. For AI models to effectively forecast the development of pests, these fluctuations in temperature, humidity, and precipitation must be taken into consideration.
+The accuracy of AI models, which rely on local climate data to optimize pest detection algorithms, can be impacted by insect behavior driven by the environment. Localized information is essential for efficient pest control because climate also influences the kinds of crops cultivated, pest lifecycles, and the timing of infestations.
+
+V.	What role does climate data integration play in enhancing the accuracy of AI-based crop health assessments in Sri Lanka? 
+	AI becomes more adept at anticipating pest outbreaks and identifying crop stress when climatic data is integrated. By taking into account variables like temperature, rainfall, and humidity that are specific to Sri Lanka's many agricultural regions, it allows for more accurate monitoring.
+
+VI.	How does the use of AI and drone-based pest management in Sri Lanka compare with similar systems in other countries with tropical climates? 
+	Compared to Brazil, India, and Indonesia, which have more extensive implementations, Sri Lanka's AI-driven pest systems are still in the early stages of development. While other nations concentrate on large-scale, climate-adaptive AI models, Sri Lanka's smallholder farmers require more tailored solutions.
+
+VII.	How can privacy and ethical concerns surrounding data collection using drones in agricultural fields be addressed? 
+	Drones should gather anonymous data, get farmers' permission, and adhere to explicit guidelines on data use and storage in order to allay privacy concerns. This promotes moral behavior and increases farmer confidence.
+
+VIII.	How can AI-driven drone systems be integrated into the existing agricultural practices of Sri Lankan farmers without disrupting their workflows? 
+	Provide farmers with training, collaborate with cooperatives, and deploy the technology gradually in order to incorporate AI drones without interfering with workflows. The adoption of the new systems will go more smoothly with a phased approach.
+
+IX.	How can drones be optimized for long-term operation in Sri Lanka’s diverse agricultural landscapes, considering battery life and terrain challenges?
+	In order to handle a variety of settings, drones in Sri Lanka require longer battery lives, solar choices, and terrain-adaptive technologies. Designs that withstand weather are essential for efficient, long-term deployment in a variety of agricultural locations.
+
+
+2.8.	Plan/Schedule 
+ 
+Figure 3/ plan
+2.9.	Cost.
+What is For?	Expenses 	Cost 
+Software development 	Integration of sensors	 Rs.               370,000.00 
+ 	Analyzing collected data	 
+Software License 	Open source alternative 	 Rs.                   4,800.00 
+Drones 	DJI Agras T16	 Rs.               610,000.00 
+ 	High quality agricultural drone capable of carrying sensors.	 
+Sensors	Multispectral cameras
+Thermal cameras 
+Ground control system 	 Rs.               350,000.00 
+Infrastructure 	Onboard processing systems to perform real-time data analytics during flights.	 Rs.               106,000.00 
+Maintenance and Operation 	Drone maintenance
+Software maintenance
+personal training 	 Rs.               240,000.00 
+Drone Maintenance and Repairs	Regular servicing and repairs for drones and other hardware components.	 Rs.               120,000.00 
+Sensor Calibration and Replacement	Regular calibration and replacement of sensors as needed.	 Rs.                 80,000.00 
+Total	 	 Rs.         1,880,800.00 
+Table 2/cost
+2.10.	Conclusion 
+
+This research highlights the importance of leveraging AI and Drone technology to address key challenges in Sri Lanka’s agricultural sector, it related to pest management, plant health monitoring, and climate control. In pest management using drone already practiced in Sri Lanka, The use of AI to real-time climate monitoring and plant health screening is a major development that has the potential to completely transform precision agriculture. 
+The suggested AI-driven system might significantly improve crop yield, minimize losses from climate-related calamities, and maximize resource utilization. Through the use of real-time data analytics, machine learning models, and high-resolution photography, the system can give farmers accurate and useful information so they may take prompt and efficient action to save their crops. This system will be flexible enough to adjust to the varied agricultural terrain of Sri Lanka, accounting for the regional climate, pests, and crop variations.
+AI to automate processes such as soil analysis, pest detection, and climate control will not only make agriculture more efficient but also sustainable. Farmers in flood- prone and peat- effected regions, such as those in Anuradhapura, Polonnaruwa, Ampara, and kurunegale, will benefit from predictive capabilities that can help mitigate the impact of these challenges on crop yields. 
+Even though there are drone-based systems currently in place, there is a chance to improve Sri Lanka's agricultural practices by incorporating advanced AI for plant health and climate monitoring. This AI-driven approach will continue to innovate and improve food security, agricultural productivity, and the country's agricultural sector's sustainability.
+2.11.	Critical evaluation of the product.
+In Sri Lanka's agriculture sector, the AI-driven system for pest management and plant health assessment has provided several important discoveries. Artificial intelligence-enabled drones can greatly improve the early identification of pests and plant diseases, enabling prompt responses. The system's versatility too many climates and crops is demonstrated by its capacity to evaluate data from multiple regions, including Anuradhapura, Polonnaruwa, and Hatton, increasing total agricultural productivity. Integrating climate data can also assist farmers in anticipating and reducing the effects of the environment on crop health.
+Additionally, AI might be developed to provide policy recommendations based on past government data, and as 5G technology rolls out in Sri Lanka, communication between computers, mobile devices, and drones will get better. As the system becomes more widely used, its features may be expanded to include integration with e-governance services, which would simplify farmers' administrative and agricultural tasks.
+Data security is a major worry, particularly when it comes to government access to private agriculture data. In order to prevent illegal global access, which could result in data misuse and potential cyber-attacks, the system should be limited to Sri Lanka with controls tailored to the needs of the nation. I didn't know much about artificial intelligence (AI) in agriculture at first, but this study helped me better grasp how it affects crop health and pest control. I also witnessed how AI can make difficult tasks simpler.     
+                                                                                                                          (Author’s View)
+2.12.	References 
+Agro-Engineering:, (2022).. IoT and Image processing based agriculture monitoring and recommendation system. Available from: 10.1109/iceca55336.2022.10009280. 
+Agro-Engineering, H. 8., 2022. Harshanath. (2022). 88. Agro-Engineering: IoT and Image processing based agriculture monitoring and recommendation system.. [Online] 
+Available at: https://typeset.io/papers/agro-engineering-iot-and-image-processing-based-agriculture-2z1xafu8
+[Accessed 25 09 2024].
+Betancourt, O., 2023. www.sciencedirect.com. [Online] 
+Available at: https://www.sciencedirect.com/science/article/abs/pii/S0168169922008997
+[Accessed 25 10 2024].
+Dilipkumar, 2024. AI-Driven Approach to Precision Agriculture.. [Online] 
+Available at: https://typeset.io/papers/ai-driven-approach-to-precision-agriculture-3z7qqeuos0
+[Accessed 25 09 2024].
+Janagan, S. J. S. G. R. B. T. D. R. W. R. G. A. G. (. D.-E. C. D. M. P. B. o. F. E. f. I., n.d. s.l., s.n.
+Janani, T. S. V. A. D. R. P. J. (. S. S. F. S. –. A. 5.-6. A. f. 1.-3.-0.-7.-6., 2021). (. Security Smart Farming System – AgriPro. 52-62. Available from: 10.1007/978-3-030-72654-6_6. 
+Lorence, J., 2023. www.mrlcg.com. [Online] 
+Available at: https://www.mrlcg.com/resources/blog/lidar-sensor-integration-in-autonomous-vehicles-platforms/
+[Accessed 25 10 2024].
+M. P., 2022. 69. A Novel Machine Learning based Autonomous Farming Robot for Small-Scale Chili Plantations. Advances in technology,. [Online] 
+Available at: https://typeset.io/papers/a-novel-machine-learning-based-autonomous-farming-robot-for-1ljspgyv
+[Accessed 25 09 2024].
+Rennie, J., 2016. www.auav.com.au. [Online] 
+Available at: https://www.auav.com.au/articles/drone-types/#:~:text=Multi%2Drotor%20drones%20are%20the,for%20aerial%20photography%20and%20surveillance.
+[Accessed 09 10 2024].
+Rodrigo, M., 2020. mongabay. [Online] 
+Available at: https://news.mongabay.com/2020/06/in-sri-lanka-crop-destroying-insects-follow-the-covid-19-pandemic/
+[Accessed 17 06 2024].
+S., V. K. G. S. R. S. A. I. G. D. I. D. S., (2023). IoT-Enabled Smart Solution for Rice Disease Detection, Yield Prediction, and Remediation. [Online] 
+Available at: https://typeset.io/papers/iot-enabled-smart-solution-for-rice-disease-detection-yield-7gyciclr
+[Accessed 25 09 2024].
+Singh, D. Y. V., 2022. www.researchgate.net. [Online] 
+Available at: https://www.researchgate.net/publication/383823103_Artificial_Intelligence_in_Agriculture
+[Accessed 13 10 2024].
+Siventhirarajah, S., 2021. Deep learning-based pesticides prescription system for leaf diseases of home garden crops in Sri Lanka.. [Online] 
+Available at: https://typeset.io/papers/deep-learning-based-pesticides-prescription-system-for-leaf-250vmmhbc5
+[Accessed 25 09 2024].
+TNH, 2011. Floods destroy over a third of rice harvest. [Online] 
+Available at: https://reliefweb.int/report/sri-lanka/sri-lanka-floods-destroy-over-third-rice-harvest
+[Accessed 25 09 2024].
+VAPECA, 2024. Smart Agricultural and Analysis Monitoring. 
+view, A. a. l., 2024. 
+view, A., n.d. agrio.app. [Online] 
+Available at: https://agrio.app/An-app-that-identifies-plant-diseases-and-pests/
+[Accessed 25 10 2024].
+view, A., n.d. www.groundcontrol. [Online] 
+Available at: https://www.groundcontrol.com/markets/agriculture/
+[Accessed 25 10 2024].
+
+2.13.	Appendices to the final report 
+ 
+Figure 4
+ 
+Figure 5
+ 
+Figure 6
+
+Finally, in this appendices I was get 8 responses I was send this google form between 18 to 25 people but I was get 8 responses after I get responses then I asked one or two persons to why didn’t response this google form, they said they don’t proper understand about that they return questioned me  what is Ai driven agriculture and why importance drone then I was decided to add some features to my assignment that is guide to people and give proper knowledge about the current system and current situation. 
+(Author’s view)
+
+ 
+Figure 7
+ 
+Figure 8
+in, here I was get 8 responses then I want to thanks them.
+ 
+Figure 9
+ 
+Figure 10
+Most peoples like multiple support to enhance the system and they are preferred to 5G data synchronization. 87.5% of respondents believe that adding multilingual support would improve the system. 62.5% of respondents rate real-time data synchronization as highly important (rating 5 out of 5), showing strong interest in this feature.
+ 
+Figure 11
+ 
+Figure 12
+Half of the respondents rate the drone-based system's user-friendliness as average (3 out of 5), indicating room for improvement.
+ 
+Figure 13
+This is a someone response for the strength “The following extra features could improve the drone system powered by AI: Predictive analytics to estimate crop yields, real-time monitoring with warnings for prompt action, and integration with IoT devices for thorough field data. Usability would be enhanced by automated treatment recommendations based on faults found, weather adaption to modify drone flights, and multilingual support (Tamil, Sinhala). Useful enhancements include drone fleet coordination for larger farms, offline capabilities for places with poor internet connectivity, and historical data analysis for identifying patterns.”. Enhance the AI-powered drone system with predictive analytics for yield estimation, real-time alerts for quick interventions, and IoT integration for comprehensive field data. Add automated treatment recommendations and weather-adaptive flight paths for improved usability. Support Tamil and Sinhala for accessibility, coordinate drone fleets for larger farms, and enable offline capabilities in low-connectivity areas. Historical data analysis can further help identify patterns and support proactive measures. These features will optimize functionality, accessibility, and efficiency in diverse agricultural settings. 
+(Author’s view)
+ 
+Figure 14
+ 
+Figure 15
+ 
+Figure 16
+(Author’s view)
+
+3.	Ethical Consideration Approval Form
+
+Section One: Basic details
+Project title:	Building an Ai driven system plant health scanning and pest management system drone based in Sri Lanka agricultural system.
+
+Student name:	Mohamed Farzan Mohamed Aadhil
+Student number:	1029280
+Intended research start date:	2024 / 07 / 26	end date:	ivy / mm / did
+
+Section Two: Project summary
+Please select all research methods that you plan to use as part of your project:
+Interviews		
+Questionnaires		
+Observations		
+Use of personal records		
+Data analysis		
+Action research		
+Focus groups		
+Other (please specify):
+
+
+
+
+ 
+Section Three: Participants
+Please answer the following questions, giving full details where necessary.
+Will your research involve human participants? yes
+Who are the participants? Tick all that apply:
+Children aged 12–16: 	Young people aged 17–18: 	Adults: 
+How will participants be recruited (identified and approached)?
+
+1. Identify Target Participants: Establish inclusion/exclusion standards for IT specialists, patients, and healthcare providers. 
+2. Recruitment Channels: Make use of healthcare organizations, professional networks, and internet resources like LinkedIn and healthcare websites. 
+- Distribute flyers to staff and waiting areas or work with hospitals and clinics to conduct direct outreach. 
+3. Connect Participants: - Make a website where people can sign up and learn more, send out letters or emails inviting them, or post advertisements. 
+4. Informed Permission: Before participating, provide study facts and acquire signed consent. 
+5. Ethical Approval: Make sure your hiring strategy conforms to GDPR and HIPAA rules and is examined by an ethics board.
+
+
+Describe the processes you will use to inform participants about what you are doing
+
+1.	Initial Contact: Clear written invitations via email, letter, or website outlining the study’s purpose and importance.
+2.	Informed Consent: A detailed document explaining the study, tasks involved, time commitment, risks, benefits, and their voluntary participation.
+3.	Verbal Briefing: A summary of the study and opportunity to ask questions, if applicable.
+4.	Data Privacy: Clear explanation of data use, storage, and confidentiality, ensuring compliance with privacy laws.
+5.	Ongoing Updates: Regular communication to keep participants informed throughout the study.
+How will you obtain consent from participants? Will this be written? How will it be made clear to participants that they may withdraw consent to participate at any time?
+
+1.	Written Consent: Participants will be provided with a written informed consent form that outlines the purpose, procedures, risks, benefits, and their rights. This form will be distributed via email or in person, and participants must sign it to indicate their consent.
+
+2.	Clear Withdrawal Option: The consent form will explicitly state that participation is voluntary and that participants may withdraw at any time without any consequences. This will be clearly highlighted in both the written form and during any verbal briefings.
+
+3.	Verbal Reinforcement: During verbal explanations or briefings, participants will be reminded that they can opt out at any point, and they will be given instructions on how to withdraw (e.g., by notifying the research team).
+Studies involving questionnaires: 
+Will participants be given the option of omitting questions they do not wish to answer?	Yes  	No 
+If No please explain why below and ensure that you cover any ethical issues arising from this:
+Studies involving observation: 
+Confirm whether participants will be asked for their informed consent to be observed.	Yes  	No 
+Will you debrief participants at the end of their participation (i.e. give them a brief explanation of the study)?	Yes  	No 
+Will participants be given information about the findings of your study? (This could be a brief summary of your findings in general.)	Yes  	No 
+Section Four: Data storage and security
+Confirm that all personal data will be stored and processed in compliance with the Data Protection Act (1998):	Yes  	No 
+
+Who will have access to the data and personal information?
+
+1.	Research Team: Members of the research team directly involved in the study will have access to the data. This includes principal investigators, co-investigators, and any designated research assistants.
+
+2.	Data Protection Officer: If applicable, a data protection officer or compliance officer may have access to ensure that data handling procedures adhere to relevant laws and regulations.
+
+3.	Institutional Review Board (IRB): The IRB or ethics committee may have access for monitoring and compliance purposes but will handle the data confidentially.
+
+4.	Authorized Personnel: Any other personnel who require access for specific reasons (e.g., data analysis) will be granted access only on a need-to-know basis and will be trained in data protection protocols.
+During the research:
+Where will the data be stored?	Secure Cloud	USB or Hard Drive	
+Will mobile devices (such as USB storage and laptops) be used?	Yes  	No 
+If yes, please provide further details:
+
+Laptops: Laptops will be used by approved research team members, and sensitive data will be protected by strong security methods (encryption, passwords, and firewalls).
+
+USB storage: If USB drives are used, they will be encrypted and kept securely. Data will be sent safely and erased when no longer needed.
+After the research:			
+Where will the data be stored?
+	Encrypted Servers	Cloud Storage 	Physical Data in Locked Cabinets.
+How long will the data and records be kept for and in what format?
+	Data will be stored for 5 years after the completion of the study. 
+	Digital (encrypted files)	physical (documents are securely kept alive)
+
+Will data be kept for use by other researchers?	Yes  	No 
+If yes, please provide further details in section 5
+ 
+
+Section Five: Ethical issues
+Are there any particular features of your proposed work which may raise ethical concerns? If so, please outline how you will deal with these:
+
+Yes, Possible ethical considerations include:
+
+1.	Data Privacy: Handling sensitive personal information leads to privacy problems. To address this, all data will be anonymized, encrypted, and securely stored, with access restricted to authorize persons, in line with privacy laws.
+
+2.	Informed consent: Verify that participants thoroughly understand the study and their rights. A transparent consent method will be implemented, and participants will have the option to withdraw at any moment.
+
+3.	Future Data Usage: Participants may be concerned about the future usage of their data. Consent will be acquired, and anonymized data will only be shared in accordance with ethical guidelines.
+It is important that you demonstrate your awareness of potential risks that may arise as a result of your research. Please consider/address all issues that may apply. Ethical concerns may include, but are not limited to the following:
+
+•	Informed consent:  All participants will provide clear, voluntary permission after being fully told about the study's goal, procedures, and rights.
+•	Potentially vulnerable participants:  Additional steps will be taken when working with vulnerable populations (e.g., patients), to ensure that they understand the study and are not pushed into participating.
+•	Sensitive topics:  If sensitive themes are involved, participants will be notified in advance and given the option to withdraw or omit comments at any time.
+•	Risks to participants and/or researchers:  Any dangers will be minimized, and safety steps are planned for both participants and researchers.
+•	Confidentiality/anonymity:  Personal information will be anonymized, and full confidentiality will be maintained during the study.
+•	Disclosures/limits to confidentiality: Participants will be notified of any legal or ethical duties that may need disclosure (for example, harm to self or others).
+•	Data storage and security, both during and after the research (including transfer, sharing, encryption, protection): Data will be securely stored and encrypted, with access restricted to authorized personnel. It will be safeguarded during transfer and distribution, and safely destroyed following the research.
+•	Reporting: Findings will be accurately reported while maintaining participant identity and data integrity.
+•	Dissemination and use of your findings: The study's findings will be shared appropriately, guaranteeing correct use and ethical standards.
+
+
